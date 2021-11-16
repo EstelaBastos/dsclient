@@ -32,10 +32,10 @@ O projeto utiliza um repositório para versionamento do backend.
 
 A aplicação que realiza um CRUD completo de Web Services REST para acessar um recurso de clientes, contendo as seguintes operações de busca paginada, busca por id, inserção, atualização e deleção de clientes.
 
-|Verbo HTTP| Rota  | Descrição |
+|Verbo HTTP| Requisição  | Descrição |
 |--|--|--|
-| **GET** | `/clients?page=0&linesPerPage=6&direction=ASC&orderBy=name` |  Busca paginada de clientes|
-| **GET** | `/clients/{id}` |  Busca um cliente por id |
-| **POST** | `/clients` <br /> <code>{ <br />&nbsp;&nbsp;&nbsp;"name": Nome de Exemplo",<br />&nbsp;&nbsp;&nbsp; "cpf": "12345678901", <br />&nbsp;&nbsp;&nbsp; "income": 6500.0, <br />&nbsp;&nbsp;&nbsp; "birthDate": "1994-07-20T10:30:00Z", <br />&nbsp;&nbsp;&nbsp; "children": 2 <br />}</code>|  Insere um novo cliente |
-| **PUT** | `/clients/{id}`  <br /> <code>{ <br />&nbsp;&nbsp;&nbsp;"name": Nome Alterado",<br />&nbsp;&nbsp;&nbsp; "cpf": "12345678901", <br />&nbsp;&nbsp;&nbsp; "income": 6500.0, <br />&nbsp;&nbsp;&nbsp; "birthDate": "1994-07-20T10:30:00Z", <br />&nbsp;&nbsp;&nbsp; "children": 2 <br />}</code> |  Atualiza um cliente por id |
+| **GET** | Rota: `/clients?page=0&linesPerPage=6&direction=ASC&orderBy=name` |  Busca paginada de clientes|
+| **GET** | Rota: `/clients/{id}` |  Busca um cliente por id |
+| **POST** | Rota: `/clients` <br /> Corpo: <code>{ "name": Nome de Exemplo", "cpf": "12345678901",  "income": 6500.0,  "birthDate": "1994-07-20T10:30:00Z",  "children": 2 }</code>|  Insere um novo cliente |
+| **PUT** | `/clients/{id}`  <br />  Corpo: <code>{ "name": Nome Alterado", "cpf": "12345678901",  "income": 6500.0,  "birthDate": "1994-07-20T10:30:00Z",  "children": 2 }</code> |  Atualiza um cliente por id |
 | **DELETE** | `/clients/{id}` |  Deleta um cliente por id |
