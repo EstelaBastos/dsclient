@@ -36,6 +36,6 @@ A aplicação que realiza um CRUD completo de Web Services REST para acessar um 
 |--|--|--|
 | **GET** | Rota: `/clients?page=0&linesPerPage=6&direction=ASC&orderBy=name` |  Busca paginada de clientes|
 | **GET** | Rota: `/clients/{id}` |  Busca um cliente por id |
-| **POST** | Rota: `/clients` <br /> Corpo: <code>{ "name": Nome de Exemplo", "cpf": "12345678901",  "income": 6500.0,  "birthDate": "1994-07-20T10:30:00Z",  "children": 2 }</code>|  Insere um novo cliente |
-| **PUT** | `/clients/{id}`  <br />  Corpo: <code>{ "name": Nome Alterado", "cpf": "12345678901",  "income": 6500.0,  "birthDate": "1994-07-20T10:30:00Z",  "children": 2 }</code> |  Atualiza um cliente por id |
-| **DELETE** | `/clients/{id}` |  Deleta um cliente por id |
+| **POST** | Rota: `/clients` <br /><br /> Corpo: <code>{ "name": Nome de Exemplo", "cpf": "12345678901",  "income": 6500.0,  "birthDate": "1994-07-20T10:30:00Z",  "children": 2 }</code>|  Insere um novo cliente |
+| **PUT** | Rota: `/clients/{id}`  <br /><br />  Corpo: <code>{ "name": Nome Alterado", "cpf": "12345678901",  "income": 6500.0,  "birthDate": "1994-07-20T10:30:00Z",  "children": 2 }</code> |  Atualiza um cliente por id |
+| **DELETE** | Rota: `/clients/{id}` |  Deleta um cliente por id |
